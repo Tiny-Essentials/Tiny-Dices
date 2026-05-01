@@ -28,6 +28,15 @@ This project was initially a custom dice application from Pony Driland repositor
 - **Dynamic cube generation** – each die is a rotating, animated cube with unique faces. 🎭
 - **Zero-inclusive rolls** – make 0 a valid result if you need it! (Optional) 🥳
 
+### Installation 📦
+
+Before you start rolling the dice, let's get everything set up! After installing the project dependencies, it is **mandatory** to run the build command so the module works perfectly:
+
+```bash
+npm install
+npm run build:essentials
+```
+
 ### How to Use 🌟
 
 1. **Create a Dice Instance:**
