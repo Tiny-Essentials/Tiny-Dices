@@ -1,7 +1,7 @@
 {
   "name": "tiny-dices",
   "description": "Tiny Dices adds a sprinkle of fun and a touch of magic to your dice-rolling adventures — fully customizable with CSS and JavaScript to match your style, theme, or imagination! 🎲✨",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
@@ -16,7 +16,7 @@
   "author": "Yasmin Seidel (JasminDreasond)",
   "license": "GPL-3.0-only",
   "dependencies": {
-    "tiny-essentials": "^1.24.2"
+    "tiny-essentials": "1.26.0"
   },
   "keywords": [
     "dice-roller",
@@ -40,7 +40,8 @@
     "test:cjs": "node test/index.cjs",
     "fix:prettier": "prettier --write ./src/* && prettier --write ./test/*",
     "auto-build": "npm run build",
-    "build": "npm run build:js && npm run build:css",
+    "build": "npm run build:js && npm run build:css && npm run build:essentials",
+    "build:essentials": "npx tiny-essentials-fork --out-dir=src/tiny-modules libs/TinyColorValidator basics/objChecker/isJsonObject",
     "build:js": "tsc -p tsconfig.json && rollup -c && webpack --mode production",
     "build:css": "sass src/index.scss dist/TinyDices.css --no-source-map && sass src/index.scss dist/TinyDices.min.css --no-source-map --style=compressed",
     "build-clean": "npm run clean && npm run build",

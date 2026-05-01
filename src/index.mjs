@@ -1,4 +1,5 @@
-import { isJsonObject, TinyColorValidator } from 'tiny-essentials';
+import { isJsonObject } from './tiny-modules/basics/objChecker.mjs';
+import TinyColorValidator from './tiny-modules/libs/TinyColorValidator.mjs';
 
 /**
  * @typedef {Object} PreDiceResult
