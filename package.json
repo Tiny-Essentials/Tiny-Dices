@@ -37,7 +37,7 @@
     "test:cjs": "node test/index.cjs",
     "fix:prettier": "prettier --write ./src/* && prettier --write ./test/*",
     "auto-build": "npm run build",
-    "build": "npm run build:js && npm run build:css && npm run build:essentials",
+    "build": "npm run build:essentials && npm run build:js && npm run build:css",
     "build:essentials": "npx tiny-essentials-fork --out-dir=src/tiny-modules libs/TinyColorValidator basics/objChecker/isJsonObject",
     "build:js": "tsc -p tsconfig.json && rollup -c && webpack --mode production",
     "build:css": "sass src/index.scss dist/TinyDices.css --no-source-map && sass src/index.scss dist/TinyDices.min.css --no-source-map --style=compressed",
