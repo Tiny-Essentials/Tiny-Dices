@@ -57,7 +57,7 @@
     "@rollup/plugin-typescript": "^12.1.2",
     "babel-preset-es2015": "^6.24.1",
     "node-polyfill-webpack-plugin": "^4.1.0",
-    "prettier": "3.5.3",
+    "prettier": "3.9.4",
     "rollup": "^4.40.0",
     "rollup-preserve-directives": "^1.1.3",
     "sass": "^1.86.3",
