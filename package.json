@@ -52,7 +52,7 @@
     "@babel/node": "^8.0.1",
     "@babel/preset-env": "^8.0.2",
     "@babel/register": "^8.0.1",
-    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-commonjs": "^29.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.2",
     "babel-preset-es2015": "^6.24.1",
